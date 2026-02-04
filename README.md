@@ -8,34 +8,34 @@
 
 **PromptGuard** is a production-ready security framework that acts as a **middleware layer** between users and Large Language Models (LLMs) to detect and mitigate prompt injection attacks. It analyzes every prompt and decides whether to Allow, Rewrite (sanitize), or Block before the prompt reaches the AI model.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
-# Clone the repository
+
 git clone https://github.com/yourusername/promptguard.git
 cd promptguard
 
-# Install dependencies
+
 pip install -r requirements.txt
 
-# Run the web application
+
 python app.py
 
-# Visit http://localhost:5050
-```
+Visit http://localhost:5050
 
-## 🎯 Key Features
 
-- 🔍 **Multi-Layer Detection**: Rule-based + ML + Semantic analysis
-- 🧠 **Hybrid Intelligence**: TF-IDF + Logistic Regression trained on real-world datasets
-- 📊 **Risk Scoring**: Sophisticated 0-100 scoring with explainable AI
-- ⚖️ **Smart Mitigation**: Adaptive Allow/Rewrite/Block decisions
-- 🌐 **Interactive Dashboard**: Real-time prompt testing and comparison
-- ⚡ **Enterprise-Ready**: Sub-200ms response times, production-grade architecture
-- 🔄 **Continuous Learning**: Feedback-driven model improvement
-- 📈 **Operational Insights**: Built-in telemetry and monitoring
+##  Key Features
 
-## 🏗️ Architecture
+-  **Multi-Layer Detection**: Rule-based + ML + Semantic analysis
+-  **Hybrid Intelligence**: TF-IDF + Logistic Regression trained on real-world datasets
+-  **Risk Scoring**: Sophisticated 0-100 scoring with explainable AI
+-  **Smart Mitigation**: Adaptive Allow/Rewrite/Block decisions
+-  **Interactive Dashboard**: Real-time prompt testing and comparison
+-  **Enterprise-Ready**: Sub-200ms response times, production-grade architecture
+-  **Continuous Learning**: Feedback-driven model improvement
+-  **Operational Insights**: Built-in telemetry and monitoring
+
+## Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────┐    ┌────────────────────┐
@@ -48,19 +48,19 @@ python app.py
                        └──────────────┘    └─────────────────┘
 ```
 
-## 📋 Table of Contents
+##  Table of Contents
 
-- [🎯 Key Features](#-key-features)
-- [🏗️ Architecture](#️-architecture)
-- [⚡ Quick Start](#-quick-start)
-- [📚 Detailed Usage](#-detailed-usage)
-- [🔧 API Reference](#-api-reference)
-- [📊 Risk Scoring Model](#-risk-scoring-model)
-- [🧪 Testing](#-testing)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- [Key Features](#-key-features)
+- [Architecture](#️-architecture)
+- [Quick Start](#-quick-start)
+- [Detailed Usage](#-detailed-usage)
+- [API Reference](#-api-reference)
+- [Risk Scoring Model](#-risk-scoring-model)
+- [Testing](#-testing)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## 📚 Detailed Usage
+## Detailed Usage
 
 ### As a Web Application
 
@@ -112,12 +112,11 @@ Then use the comparison feature in the web UI to see the security difference.
 Analyze a prompt for injection attacks.
 
 ```json
-// Request
+
 {
   "prompt": "Tell me a story about..."
 }
 
-// Response
 {
   "prompt": "Original prompt",
   "sanitized_prompt": "Cleaned prompt if needed",
@@ -145,7 +144,7 @@ Submit feedback to improve the model.
 - `POST /ml/retrain` - Retrain with updated datasets
 - `GET /ml/evaluate` - Model performance metrics
 
-## 📊 Risk Scoring Model
+## Risk Scoring Model
 
 PromptGuard uses a weighted, multi-factor scoring system:
 
@@ -163,18 +162,18 @@ PromptGuard uses a weighted, multi-factor scoring system:
 - **40-69**: REWRITE - Moderate risk, sanitize prompt
 - **70-100**: BLOCK - High risk, reject prompt
 
-## 🧪 Testing
+## Testing
 
 ### Automated Tests
 
 ```bash
-# Run unit tests
+
 python test_promptguard.py
 
-# Run API tests
+
 python test_api.py
 
-# Test Groq integration
+
 python test_groq_integration.py
 ```
 
@@ -186,7 +185,7 @@ Use the web interface at `http://localhost:5050` to:
 - View real-time risk scoring
 - Monitor ML model performance
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Here's how to get started:
 
@@ -199,22 +198,22 @@ We welcome contributions! Here's how to get started:
 ### Development Setup
 
 ```bash
-# Create virtual environment
-python -m venv promptguard_env
-source promptguard_env/bin/activate  # On Windows: promptguard_env\Scripts\activate
 
-# Install development dependencies
+python -m venv promptguard_env
+source promptguard_env/bin/activate  
+
+
 pip install -r requirements.txt
 
-# Run tests
+
 python -m pytest tests/
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built for the PS4 hackathon challenge
 - Inspired by enterprise security requirements
@@ -223,5 +222,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ for secure AI interactions
+  Made with  for secure AI interactions
 </p>
+>
